@@ -21,6 +21,9 @@ class AddViewController: UIViewController, UITextFieldDelegate, UITextViewDelega
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        titleText.delegate = self
+        authorText.delegate = self
+        pagesText.delegate = self
         //Do any additional setup after loading the view
         if editBook{
             self.title = "Edit Book"
@@ -38,6 +41,10 @@ class AddViewController: UIViewController, UITextFieldDelegate, UITextViewDelega
         }
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 
     @IBAction func saveBook(_ sender: UIButton) {
         book.title = titleText.text!
