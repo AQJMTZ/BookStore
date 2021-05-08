@@ -47,6 +47,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A0C248026461C9F009B1EF3 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				2AE75AB725F310AD00B5D97B /* AppDelegate.swift */,
+				2A16DCB3262A67D40041F6B2 /* BookStoreDelegate.swift */,
+				2AE75AB925F310AD00B5D97B /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		2A0C248126461CB9009B1EF3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2AE75AD225F3161800B5D97B /* DetailViewController.swift */,
+				2A16DCB0262A607F0041F6B2 /* AddViewController.swift */,
+				2AE75ABB25F310AD00B5D97B /* MasterViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		2AE75AAB25F310AD00B5D97B = {
 			isa = PBXGroup;
 			children = (
@@ -66,18 +86,14 @@
 		2AE75AB625F310AD00B5D97B /* BookStore */ = {
 			isa = PBXGroup;
 			children = (
+				2A0C248126461CB9009B1EF3 /* Controller */,
+				2A0C248026461C9F009B1EF3 /* Delegate */,
 				2AE75ACF25F3122400B5D97B /* BookStore.swift */,
-				2AE75AB725F310AD00B5D97B /* AppDelegate.swift */,
 				2AE75ACC25F310EA00B5D97B /* Book.swift */,
-				2AE75AB925F310AD00B5D97B /* SceneDelegate.swift */,
-				2AE75ABB25F310AD00B5D97B /* MasterViewController.swift */,
 				2AE75ABD25F310AD00B5D97B /* Main.storyboard */,
-				2A16DCB3262A67D40041F6B2 /* BookStoreDelegate.swift */,
-				2AE75AD225F3161800B5D97B /* DetailViewController.swift */,
 				2AE75AC025F310AE00B5D97B /* Assets.xcassets */,
 				2AE75AC225F310AE00B5D97B /* LaunchScreen.storyboard */,
 				2AE75AC525F310AE00B5D97B /* Info.plist */,
-				2A16DCB0262A607F0041F6B2 /* AddViewController.swift */,
 			);
 			path = BookStore;
 			sourceTree = "<group>";

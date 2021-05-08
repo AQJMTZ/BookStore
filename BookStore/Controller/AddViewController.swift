@@ -45,6 +45,16 @@ class AddViewController: UIViewController, UITextFieldDelegate, UITextViewDelega
         textField.resignFirstResponder()
         return true
     }
+    
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        if text == "\n" {
+            textView.resignFirstResponder()
+            return false
+        }
+        else {
+        return true
+        }
+    }
 
     @IBAction func saveBook(_ sender: UIButton) {
         book.title = titleText.text!
